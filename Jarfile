@@ -146,4 +146,3 @@ jar 'com.predictableresponse.somemagic:wsdl4j-1.5.1', '19.0.3'
 jar 'com.predictableresponse.somemagic:xalan', '19.0.3'
 jar 'com.predictableresponse.somemagic:xmlbeans-2.6.0', '19.0.3'
 jar 'com.predictableresponse.somemagic:y', '19.0.3'
-.3'", "jar 'com.predictableresponse.somemagic:jaxrpc', '19.0.3'", "jar 'com.predictableresponse.somemagic:mdserviceclient', '19.0.3'", "jar 'com.predictableresponse.somemagic:rsclient', '19.0.3'", "jar 'com.predictableresponse.somemagic:wsdl4j-1.5.1', '19.0.3'", "jar 'com.predictableresponse.somemagic:xalan', '19.0.3'", "jar 'com.predictableresponse.somemagic:xmlbeans-2.6.0', '19.0.3'", "jar 'com.predictableresponse.somemagic:y', '19.0.3'"]
