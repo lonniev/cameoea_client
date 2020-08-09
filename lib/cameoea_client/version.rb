@@ -1,3 +1,3 @@
 module CameoeaClient
-  VERSION = "0.1.0"
+  VERSION = "19.3.0"
 end

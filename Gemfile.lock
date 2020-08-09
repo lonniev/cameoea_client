@@ -1,12 +1,14 @@
 PATH
   remote: .
   specs:
-    cameoea_client (0.1.0)
+    cameoea_client (19.3.0)
+      java-properties
 
 GEM
   remote: https://rubygems.org/
   specs:
     diff-lcs (1.4.4)
+    java-properties (0.2.1)
     rake (12.3.3)
     rspec (3.9.0)
       rspec-core (~> 3.9.0)
