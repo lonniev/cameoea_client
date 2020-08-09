@@ -48,7 +48,45 @@ module CameoeaClient
 
             %x{ #{mvnHome} install:install-file -Dfile="#{jar}" -Dpackaging=jar -DgroupId=#{@groupId} -DartifactId=#{artifactId} -Dversion=#{@version} }
 
+            { :group => @groupId, :artifact => artifactId, :version => @version }
         }
+
+      end
+
+    end
+
+    class Jbundler
+
+      @jarFileName = "Jarfile"
+
+      def self.generateJarFileContent( cameoClassPathJarArtifacts )
+
+        cameoClassPathJarArtifacts.map{ |spec|
+
+          "jar '#{spec[:group]}:#{spec[:artifact]}', '#{spec[:version]}'"
+
+        }
+
+      end
+
+      def self.writeJarFile( content )
+
+        File.open( @jarFileName,
+          File::Constants::CREAT|File::Constants::WRONLY ) { |file|
+            
+            content.map { |jarSpecLine|
+            
+              file.puts jarSpecLine
+              
+            }
+          
+          }
+
+      end
+
+      def self.generateJarFileFromEnvironment
+
+        writeJarFile( generateJarFileContent( Maven.installJarsToLocalRepository ) )
 
       end
 

@@ -15,6 +15,7 @@ within the Ruby session, rather than vice versa, the Ruby environment can be whi
 gems and allows the Ruby session to access multiple Cameo EA projects.}
   spec.homepage      = 'https://rubygems.org/gems/cameoea_client'
   spec.license       = "MIT"
+
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
 
   spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
@@ -32,6 +33,6 @@ gems and allows the Ruby session to access multiple Cameo EA projects.}
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_runtime_dependency 'java-properties'
+  spec.add_runtime_dependency 'java-properties', "~> 0.2.1"
   
 end

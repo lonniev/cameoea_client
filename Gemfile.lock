@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     cameoea_client (19.3.0)
-      java-properties
+      java-properties (~> 0.2.1)
 
 GEM
   remote: https://rubygems.org/
@@ -25,6 +25,7 @@ GEM
     rspec-support (3.9.3)
 
 PLATFORMS
+  java
   ruby
 
 DEPENDENCIES
