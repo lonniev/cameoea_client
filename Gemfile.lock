@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    cameoea_client (19.3.0)
+    cameoea_client (19.0.3)
       java-properties (~> 0.2.1)
 
 GEM
